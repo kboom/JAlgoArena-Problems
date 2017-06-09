@@ -32,6 +32,11 @@ jar {
     baseName = 'jalgoarena-problems'
 }
 
+bootRun {
+    systemProperty 'server.port', Integer.getInteger('server.port', 5002)
+}
+
+
 dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind',
             'com.fasterxml.jackson.core:jackson-core',
